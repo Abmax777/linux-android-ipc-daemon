@@ -3,21 +3,8 @@
 
 A native C++ telemetry daemon running on Linux (WSL2) that streams real-time vehicle data to an Android Automotive OS (AAOS) emulator over a TCP socket, with a built-in benchmarking harness.
 
-## Architecture
-C++ Daemon (Linux/WSL2)                    Android App (AAOS Emulator)
-┌─────────────────────────┐                ┌──────────────────────────┐
-│  Producer Thread        │                │                          │
-│  - Generates telemetry  │                │  - Connects to daemon    │
-│  - Pushes to queue      │                │  - Displays Speed/RPM/   │
-│                         │   TCP Socket   │    Fuel in real time     │
-│  Sender Thread          │ ─────────────► │  - Echoes every message  │
-│  - Drains queue         │ ◄───────────── │    back for RTT          │
-│  - Sends over TCP       │   Echo (ACK)   │    measurement           │
-│  - Measures RTT         │                │  - Tracks throughput     │
-└─────────────────────────┘                └──────────────────────────┘
-WSL2 (172.20.x.x)                        AAOS Emulator
-└──────── adb reverse ────────┘
-(tunnelled over ADB)
+<img width="956" height="413" alt="image" src="https://github.com/user-attachments/assets/44344709-0dec-47a3-8358-8b7d682fe73c" />
+
 
 ## Key Concepts Demonstrated
 
