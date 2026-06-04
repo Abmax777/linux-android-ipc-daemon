@@ -28,16 +28,7 @@ A native C++ telemetry daemon running on Linux (WSL2) that streams real-time veh
 P99 outliers are attributable to Android JVM garbage collection pauses on the receiver thread. In a production AOSP deployment, the receive path would be handled natively via JNI to eliminate GC jitter.
 
 ## Project Structure
-linux-android-ipc-daemon/
-├── daemon.cpp          # C++ daemon (producer + sender threads, benchmarking)
-├── README.md
-└── IPCDaemon/          # Android Studio project
-└── app/src/main/
-├── java/com/abmax/ipcdaemon/
-│   └── MainActivity.kt   # TCP client + echo + throughput tracking
-├── res/layout/
-│   └── activity_main.xml
-└── AndroidManifest.xml
+<img width="1083" height="484" alt="image" src="https://github.com/user-attachments/assets/6507a2fe-a367-48fb-9aa9-c0ec680464f2" />
 
 ## Setup & Run
 
