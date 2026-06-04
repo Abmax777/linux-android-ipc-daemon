@@ -58,6 +58,6 @@ g++ -o daemon daemon.cpp -std=c++17 -lpthread
 **4. Launch the Android app** from Android Studio targeting the AAOS emulator.
 
 ## Why This Project
-Built to demonstrate end-to-end Linux-to-Android native IPC — the same communication pattern used in Android Automotive OS platform development for streaming vehicle sensor data from native HAL layers into Android framework services.
+
 
 Built to demonstrate end-to-end Linux-to-Android native IPC — the same communication pattern used in Android Automotive OS platform development for streaming vehicle sensor data from native HAL layers into Android framework services.
