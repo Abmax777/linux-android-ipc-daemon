@@ -3,8 +3,7 @@
 
 A native C++ telemetry daemon running on Linux (WSL2) that streams real-time vehicle data to an Android Automotive OS (AAOS) emulator over a TCP socket, with a built-in benchmarking harness.
 
-<img width="956" height="413" alt="image" src="https://github.com/user-attachments/assets/44344709-0dec-47a3-8358-8b7d682fe73c" />
-
+<img width="962" height="508" alt="image" src="https://github.com/user-attachments/assets/8686545b-b771-42db-82fb-f0413422e5dd" />
 
 ## Key Concepts Demonstrated
 
